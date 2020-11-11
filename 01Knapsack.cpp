@@ -613,6 +613,13 @@ int main()
     searchLoop();
     cout << "Best found solution has a value of: " << bestValue << endl;
     cerr << "best val: " << bestValue << endl;
+    for(int i=0; i<n; i++)
+    {
+        if(bestSolution[i]==1)
+        {
+            cout << "include item with value " << values[i] << " and weight " << weights[i] << endl;
+        }
+    }
     debugVerifyIndeedCorrect();
     return 0;
 }
